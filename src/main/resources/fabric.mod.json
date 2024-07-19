@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "origins-dc-message-changer",
+	"version": "${version}",
+	"name": "aphotic-custom-msg",
+	"description": "Changes the origins failed handshake disconnect message",
+	"authors": [
+		"hisui"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/origins-dc-message-changer/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"mod.hisui.origins.handshake.change.ChangeHandshakeMessage"
+		]
+	},
+	"mixins": [
+		"origins-dc-message-changer.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"origins": "1.10.0"
+	}
+}
